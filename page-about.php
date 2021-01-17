@@ -18,8 +18,8 @@ get_header() ?>
             <h4>Designer. Thinker. Coder.</h4>
             <p>
                 Everyday, I strive for perfection and high quality. <br>
-                I do the work I do because I love it. I like the industry. I like the people I meet. I like to talk tech & stuff. I embrace the nerd. I like to make the web a better place.
-                Hopefully we cross paths in the real world someday and we can make it a better place, together.
+                I do the work I do because I love it. I like the industry. I like the people I meet. I like to talk tech & stuff. I embrace the nerd. I love jazz. I like to make the web a better place.
+                Hopefully, we cross paths in the real world someday and we can make it a better place, together.
             </p>
         </div>
     </div>

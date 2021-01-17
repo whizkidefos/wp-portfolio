@@ -13,6 +13,6 @@ burger.addEventListener("click", () => {
 		burger.classList.remove("open");
 		menuOpen = false;
 		menu.style.transform = "scale(0)";
-		menu.style.opacity = 0;
+		// menu.style.opacity = 0;
 	}
 });
