@@ -1,0 +1,113 @@
+.contact {
+	padding: 5rem;
+
+	.email,
+	.whatsapp,
+	.telegram {
+		color: inherit;
+		display: block;
+		font-size: 18px;
+		padding: 10px 0;
+		transition: 250ms;
+
+		svg {
+			transform: translateY(2px);
+		}
+
+		&:hover {
+			color: $dark;
+			font-weight: 600;
+		}
+	}
+
+	@media (max-width: 580px) {
+		padding: 0;
+	}
+
+	&::before {
+		content: "";
+		width: 500px;
+		height: 500px;
+		background: rgb(240, 237, 237);
+		border-radius: 100%;
+		position: absolute;
+		right: 10rem;
+		top: 8rem;
+
+		@media (max-width: 768px) {
+			width: 300px;
+			height: 300px;
+			right: 6rem;
+			top: 6rem;
+		}
+	}
+
+	h1 {
+		font-size: 40px;
+		font-weight: bold;
+		text-transform: uppercase;
+		margin: 2rem 0;
+	}
+}
+
+div.wpforms-container-full .wpforms-form input[type="text"],
+div.wpforms-container-full .wpforms-form input[type="email"],
+div.wpforms-container-full .wpforms-form textarea {
+	background: white;
+	border: none !important;
+	padding: 10px 20px !important;
+	border-radius: 20px !important;
+	height: 45px !important;
+	box-shadow: 1px 3px 5px rgba(0, 0, 0, 0.1);
+}
+
+div.wpforms-container-full .wpforms-form textarea {
+	background: white;
+	border-color: lightgray !important;
+	font-family: proxima-nova, sans-serif;
+	height: 150px !important;
+	resize: none;
+}
+
+div.wpforms-container-full .wpforms-form button[type="submit"] {
+	background: transparent !important;
+	border: none !important;
+	color: $dark;
+	font-family: proxima-nova, sans-serif;
+	font-size: 14px;
+	font-weight: 600;
+	padding-left: 0 !important;
+	text-transform: uppercase;
+
+	&::after {
+		content: "\2192";
+		margin-left: 10px;
+		transition: transform 250ms ease;
+	}
+
+	&::before {
+		content: "";
+		position: absolute;
+		bottom: 0;
+		left: 0;
+		width: 10%;
+		height: 3px;
+		background: $dark;
+	}
+
+	&:hover::after {
+		transform: translateX(10px);
+	}
+}
+
+.wpforms-confirmation-container-full,
+div[submit-success]
+	> .wpforms-confirmation-container-full:not(.wpforms-redirection-message) {
+	background: white !important;
+	border: 1px solid white !important;
+	border-radius: 10px !important;
+	box-shadow: 1px 3px 5px rgba(0, 0, 0, 0.1);
+	color: $dark !important;
+	padding: 30px !important;
+	transition: all 500ms ease-in;
+}

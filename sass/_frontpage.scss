@@ -1,0 +1,35 @@
+.featured-builds {
+	display: flex;
+	align-items: center;
+	justify-content: center;
+	margin-top: 5rem;
+	a {
+		display: block;
+	}
+
+	&-title {
+		display: flex;
+		align-items: center;
+
+		img {
+			height: 30px;
+			margin-right: 10px;
+		}
+
+		h2 {
+			font-weight: 600;
+			font-size: 30px;
+			position: relative;
+
+			@media (max-width: 600px) {
+				font-size: 25px;
+			}
+		}
+		.before-title {
+			width: 50px;
+			height: 3px;
+			background: $dark;
+			margin-right: 10px;
+		}
+	}
+}

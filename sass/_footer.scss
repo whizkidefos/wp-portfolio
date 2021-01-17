@@ -1,0 +1,25 @@
+footer {
+	margin-top: 5rem;
+	p {
+		margin: 0;
+	}
+
+	.footer-socials {
+		border-radius: 50px;
+		width: 400px;
+		margin: 20px auto;
+		padding: 10px;
+		box-shadow: 1px 3px 5px rgba(0, 0, 0, 0.1);
+
+		display: flex;
+		align-items: center;
+		justify-content: space-around;
+		a {
+			color: darkgray;
+
+			&:hover {
+				color: $dark;
+			}
+		}
+	}
+}

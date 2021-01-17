@@ -1,0 +1,68 @@
+.btn {
+}
+
+.card {
+	border-radius: 10px;
+	height: 400px;
+	position: relative;
+	overflow: hidden;
+	transition: transform 250ms ease-in-out;
+
+	img {
+		width: 100%;
+		height: 260px;
+		object-fit: cover;
+		transition: 250ms;
+
+		&::after {
+			content: "";
+			position: absolute;
+			top: 0;
+			left: 0;
+			width: 100%;
+			background-image: linear-gradient(rgba(0, 0, 0, 0.4), rgba(0, 0, 0, 0.8));
+			z-index: 1;
+		}
+	}
+
+	h3 {
+		font-weight: 700;
+		padding: 20px 20px 5px 20px;
+		text-transform: uppercase;
+	}
+
+	p {
+		padding: 0 20px;
+	}
+
+	&:hover img {
+		transform: scale(1.05);
+		filter: grayscale(0);
+	}
+
+	.tags {
+		position: absolute;
+		bottom: 3%;
+		padding: 30px;
+
+		span {
+			background: $accent;
+			color: $dark;
+			font-size: 12px;
+			font-weight: 600;
+			padding: 5px 10px;
+			border-radius: 30px;
+			margin: 10px 10px 0 0;
+			transition: 250ms;
+
+			&:hover {
+				background: $dark;
+				color: white;
+			}
+		}
+	}
+
+	// &:hover {
+	// 	transform: translateY(-2px);
+	// }
+}

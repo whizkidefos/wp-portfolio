@@ -1,0 +1,30 @@
+.socials {
+	position: absolute;
+	background: white;
+	mix-blend-mode: difference;
+	top: 50%;
+	left: 20px;
+	width: 45px;
+	height: 320px;
+	border-radius: 50px;
+	box-shadow: 2px 4px 6px rgba(0, 0, 0, 0.1);
+	transition: 500ms;
+	z-index: 10;
+
+	display: flex;
+	flex-direction: column;
+	justify-content: space-around;
+	align-items: center;
+
+	a {
+		color: gray;
+
+		&:hover {
+			color: black;
+		}
+	}
+
+	@media (max-width: 580px) {
+		display: none;
+	}
+}

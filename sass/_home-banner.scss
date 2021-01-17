@@ -1,0 +1,147 @@
+.home-page-banner {
+	background: white;
+	text-align: center;
+	position: relative;
+	padding: 6rem 0;
+	margin-top: 5rem;
+
+	img {
+		width: 250px;
+		height: 250px;
+		object-fit: cover;
+		border-radius: 100%;
+		border: 15px solid $lightGrey;
+
+		@media (max-width: 768px) {
+			width: 150px;
+			height: 150px;
+		}
+	}
+
+	h1 {
+		font-size: 40px;
+		font-weight: 600;
+		line-height: 1.2;
+	}
+
+	h4 {
+		font-size: 14px;
+		font-weight: 600;
+		letter-spacing: 2px;
+	}
+
+	p {
+		max-width: 500px;
+		width: 95%;
+		margin: 0 auto;
+	}
+
+	.social-media-links {
+		display: flex;
+		align-items: center;
+		justify-content: center;
+		margin-top: 20px;
+
+		a {
+			color: rgb(153, 153, 153);
+			display: inline-block;
+			font-size: 16px;
+			height: 30px;
+			width: 30px;
+			border-radius: 50%;
+			padding: 5px;
+			box-shadow: 1px 2px 4px rgba(0, 0, 0, 0.1);
+
+			display: flex;
+			align-items: center;
+			justify-content: center;
+			margin: 0 10px;
+			transition: color 250ms ease-in-out;
+
+			&:hover {
+				color: $dark;
+			}
+		}
+	}
+	// img {
+	// 	border-radius: 10px;
+	// 	margin-top: 120px;
+	// 	width: 300px;
+	// 	height: 400px;
+	// 	object-fit: cover;
+	// 	filter: brightness(1.2);
+	// 	transform: scale(0.85);
+	// }
+
+	// h1 {
+	// 	//font-family: lust, serif;
+	// 	color: white;
+	// 	font-family: proxima-nova, sans-serif;
+	// 	font-weight: 900;
+	// 	font-style: normal;
+	// 	font-size: 8rem;
+	// 	letter-spacing: 50px;
+	// 	text-transform: uppercase;
+	// 	mix-blend-mode: difference;
+
+	// 	position: absolute;
+	// 	top: 60%;
+	// 	left: 50%;
+	// 	transform: translate(-50%, -50%);
+	// 	z-index: 1;
+
+	// 	@media (max-width: 1180px) {
+	// 		font-size: 6rem;
+	// 		letter-spacing: 40px;
+	// 	}
+
+	// 	@media (max-width: 768px) {
+	// 		font-size: 3rem;
+	// 		letter-spacing: 28px;
+	// 		top: unset;
+	// 		bottom: -8rem;
+	// 	}
+
+	// 	@media (max-width: 550px) {
+	// 		font-size: 2rem;
+	// 		letter-spacing: 20px;
+	// 		top: unset;
+	// 		bottom: -5rem;
+	// 	}
+	// }
+
+	.scroll {
+		position: absolute;
+		bottom: -8rem;
+		left: 50%;
+		transform: translate(-50%, -50%);
+
+		a {
+			color: #666666;
+		}
+
+		&::before {
+			content: "";
+			background: #6666668c;
+			width: 1px;
+			height: 75px;
+			position: absolute;
+			left: 50%;
+			top: 25px;
+		}
+	}
+
+	.misc {
+		position: absolute;
+		top: 50%;
+		right: -48px;
+		transform: rotate(-90deg);
+		font-size: 14px;
+		font-weight: 700;
+		letter-spacing: 1.5px;
+		color: white;
+		mix-blend-mode: difference;
+		z-index: 8;
+		text-transform: uppercase;
+	}
+}
